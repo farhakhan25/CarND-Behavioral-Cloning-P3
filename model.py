@@ -16,7 +16,7 @@ from keras.layers.pooling import MaxPooling2D
 import os
 
 
-path_strings = ["train_data"]  # ["data1", "train_data1"]
+path_strings = ["data1"]  # ["data1", "train_data1"]
 paths = [os.path.normpath(string) for string in path_strings]
 
 meta_data = []
@@ -36,6 +36,7 @@ for s, path in enumerate(paths):
 
 
 file.close()
+print(f"total Data {data_index}")
 
 images = []
 measurements = []
